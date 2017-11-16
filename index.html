@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <title>Pomodoro Timer</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Allerta+Stencil" rel="stylesheet">
+  <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <div class="row" id="pomodoroTitle">
+      <h1 id="pomodoro">Pomodoro Clock</h1>
+    </div>
+    
+    <div class="row" id="timerBox">
+      <h1 id="timerTitle">Work</h1>
+      <h1 class="digits" id="timer">25:00</h1>
+        <img src="images/icons8-play-60.png" id="play">
+        <img src="images/icons8-pause-60.png" id="pause">
+        <img src="images/icons8-repeat-60.png" id="reset">
+        <img src="images/icons8-stop-60.png" id="stop">
+    </div>
+    
+    <div class="row" id="timerParameters">
+      <div class="column">
+            <h2>Work</h2>
+      </div>
+      <div class="column">
+            <h2>Rest</h2>
+      </div>
+      <div class="col-sm">
+            <img src="images/icons8-double-down-24.png" id="workDec">
+      </div>
+      <div class="col-sm">
+            <h2 class="digits" id="workTime">25</h2>
+      </div>
+      <div class="col-sm">
+            <img src="images/icons8-double-up-24.png" id="workInc">
+      </div>
+      <div class="col-sm">
+            <img src="images/icons8-double-down-24.png" id="restDec">
+      </div>
+      <div class="col-sm">
+            <h2 class="digits" id="restTime">5</h2>
+      </div>
+      <div class="col-sm">
+            <img src="images/icons8-double-up-24.png" id="restInc">
+      </div>
+    </div>
+    
+  </div>
+  
+  <audio id="alarmTone">
+    <source src="audio/Carbon.ogg" type="audio/ogg">
+  </audio>
+  <footer>
+
+      <p>by <a href="https://github.com/tonalmasher" target="_blank">tonalmasher</a></p>
+      <p>Icons by <a href="https://icons8.com" target="_blank">Icons8</a></p>
+
+  </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
